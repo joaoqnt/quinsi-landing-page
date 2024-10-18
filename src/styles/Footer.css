@@ -1,0 +1,37 @@
+.footer {
+    background-color: #7A77FC; /* Cor de fundo do footer */
+    color: #5D31FF; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+    width: 100%; /* Ocupa toda a largura da tela */
+    bottom: 0; /* Fica na parte inferior */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 20px; /* Espaçamento lateral */
+  }
+  
+  .footer-links {
+    list-style: none; /* Remove o estilo padrão da lista */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    gap: 15px; /* Espaçamento entre os links */
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s; /* Animação para hover */
+  }
+  
+  .footer-links a:hover {
+    color: #5D31FF; /* Cor ao passar o mouse */
+  }
+  

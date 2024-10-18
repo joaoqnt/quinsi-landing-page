@@ -1,0 +1,46 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; /* Fundo branco */
+    border-bottom: 1px solid #b0b0b0; /* Borda cinza escura */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Leve sombra para dar destaque */
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Faz com que ocupe a largura total da página */
+    z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+}
+
+/* Espaçamento para o conteúdo não ficar escondido atrás da navbar */
+.body-content {
+    padding-top: 70px; /* Ajuste conforme a altura da navbar */
+}
+
+/* Logo da Navbar */
+.navbar-logo {
+    width: 100px; /* Ajuste conforme necessário */
+}
+
+/* Estilo do Menu */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaço entre os itens */
+    margin: 0;
+    padding: 0;
+}
+
+/* Links do Menu */
+.navbar-menu li a {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover nos links */
+.navbar-menu li a:hover {
+    color: #000; /* Muda a cor ao passar o mouse */
+}

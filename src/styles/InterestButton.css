@@ -1,0 +1,15 @@
+.interest-button {
+    background-color: #7066FD; /* Cor de fundo */
+    color: #fff; /* Texto branco */
+    font-size: 18px;
+    padding: 15px 30px; /* Espaçamento interno */
+    border: 2px solid #000000;
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição suave */
+    text-transform: uppercase;
+}
+
+.interest-button:hover {
+    background-color: #5D31FF; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão em 10% */
+}

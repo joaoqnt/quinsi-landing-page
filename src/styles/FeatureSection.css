@@ -1,0 +1,90 @@
+.feature-section {
+  text-align: center;
+  padding: 60px;
+  background-color: #ffffff;
+}
+
+.feature-heading {
+  color: #5D31FF;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-item {
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #6650FA;
+  margin: 0 auto 15px;
+  background-color: white; /* Fundo branco para o ícone */
+  padding: 15px;
+  border-radius: 50%; /* Torna o ícone circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra aplicada ao ícone */
+  width: 60px; /* Define uma largura fixa para o ícone */
+  height: 60px; /* Define uma altura fixa para o ícone */
+  display: flex; /* Alinha o ícone no centro */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.priorities {
+  margin-top: 20px;
+}
+
+
+.row-title {
+  display: flex;
+  align-items: center; 
+  text-align: center;
+  justify-content: center;
+}
+
+.icon-arrow {
+  color: #6650FA; 
+  margin-right: 10px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+.feature-grid {
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+}
