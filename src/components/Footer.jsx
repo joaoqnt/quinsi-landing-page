@@ -1,15 +1,17 @@
 import React from 'react';
-import '../styles/Footer.css'; // Arquivo CSS para estilização
+import '../styles/Footer.css'; 
+import logoBranca from '../assets/negativo-Branca.png';
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <h3>2024 - Quinsi Soluções Tecnológicas. Todos os direitos reservados.</h3>
-        <ul className="footer-links">
-          <li><a href="/">34 99152-0665</a></li>
-          <li><a href="/">quinsitecnologia@gmail.com</a></li>
-        </ul>
+      <div className="footer-logo">
+        <img src={logoBranca} alt="Logo Quinsi" />
+      </div>
+      <div className='footer-info'>
+        <h2>Quinsi - Soluções Tecnológicas</h2>
+        <p>Telefone: <a href="tel:+5534991740481">+55 34 99174-0481</a></p>
+        <p>Copyright © Quinsi. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
