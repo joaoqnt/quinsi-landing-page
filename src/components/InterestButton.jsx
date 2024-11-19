@@ -3,7 +3,7 @@ import '../styles/InterestButton.css'
 
 function InterestButton() {
   const openWhatsApp = () => {
-    const phoneNumber = '5534991520665'; // Substitua pelo número de telefone
+    const phoneNumber = '5534991740481'; // Substitua pelo número de telefone
     window.open(`https://wa.me/${phoneNumber}`, '_blank');
   };
   return (

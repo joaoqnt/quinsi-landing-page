@@ -15,7 +15,6 @@ function App() {
       <FirstSection></FirstSection>
       <FeatureSection></FeatureSection>
       <SecondSection></SecondSection>
-      <TechSection></TechSection>
       <Footer></Footer>
       <WhatsAppButton />
     </>
