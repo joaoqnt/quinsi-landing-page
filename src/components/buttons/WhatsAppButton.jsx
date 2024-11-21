@@ -5,7 +5,7 @@ import avatar from '../../assets/avatar-3.png';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '5534991520665';
+  const phoneNumber = '5534991740481';
 
   return (
     <FloatingWhatsApp

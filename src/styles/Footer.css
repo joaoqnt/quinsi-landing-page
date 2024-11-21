@@ -9,6 +9,8 @@
   text-align: center;
   width: 100%;
   flex-wrap: wrap; 
+  margin: 0px;
+  padding: 20px 0px;
 }
 
 .footer-logo {

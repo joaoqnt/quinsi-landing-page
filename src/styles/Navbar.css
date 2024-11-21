@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 40px;
-    background-color: #424242; /* Fundo cinza */
+    background-color: #424242;
     position: fixed;
     top: 0; /* Alinha ao topo */
     width: 100%; /* Faz com que ocupe a largura total da página */
@@ -14,11 +14,6 @@
 /* Logo da Navbar */
 .navbar-logo {
     width: 200px; /* Ajuste conforme necessário */
-}
-
-/* Ajuste do botão */
-.navbar-button {
-    padding: 0 20px; /* Adiciona 20px de espaçamento à direita e à esquerda do botão */
 }
 
 /* Responsividade para telas pequenas */
