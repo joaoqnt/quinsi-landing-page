@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Navbar.css'; // Crie um arquivo CSS para o estilo da navbar
-import logo from '../assets/quinsi-logo.png';
+import logo from '../assets/tech-branca@4x.png';
 
 function Navbar() {
     return (

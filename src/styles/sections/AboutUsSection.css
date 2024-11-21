@@ -1,0 +1,115 @@
+.about-us-section {
+    padding: 60px;
+    margin-top: 20px;
+}
+
+h1{
+    color: rgb(66, 66, 66);
+    margin: 0px;
+    padding: 0px;
+}
+
+.divider{
+    height: 4px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #7A77FC, #5D31FF);
+}
+
+.section{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-mission{
+    background-color: white;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.div-wrapper {
+    display: flex;
+    flex-direction: row; /* Alinha lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center;
+    gap: 20px;
+}
+
+.content-wrapper {
+    flex: 2; /* Dá mais espaço para o texto */
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-section {
+    flex: 1; /* Dá menos espaço para a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto;
+    width: 400px; /* Reduz o tamanho da imagem */
+    border-radius: 10px; /* Borda arredondada */
+    margin-bottom: -40px;
+}
+
+.values-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; /* Alinha o texto horizontalmente ao centro */
+    text-align: center; /* Garante que o texto está centralizado */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.value-item {
+    display: flex;
+    align-items: flex-start; /* Ícone e texto alinhados no topo */
+    margin-bottom: 15px;
+}
+
+.value-item i.icon {
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    color: #5D31FF; /* Cor do ícone */
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+.value-item p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    color: #424242; /* Cor do texto */
+}
+
+.value-item strong {
+    font-weight: bold;
+}
+
+/* Efeito de hover */
+.value-item:hover i.icon {
+    color: #7A77FC; /* Alteração na cor do ícone */
+}
+
+@media (max-width: 768px) {
+    .div-wrapper {
+        flex-direction: column; /* Empilha em telas pequenas */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .content-wrapper, .image-section {
+        flex: none; /* Remove a divisão proporcional */
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    .image-section img {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+}

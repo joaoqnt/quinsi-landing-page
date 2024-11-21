@@ -2,7 +2,7 @@ import React from 'react';
 import { FaMobileAlt, FaLaptop, FaServer, FaCode, FaRobot } from 'react-icons/fa';
 import '../styles/FeatureSection.css';
 import { FaEarthAmericas } from 'react-icons/fa6';
-import Card from "./CardFeature";
+import Card from "../CardFeature";
 
 const features = [
   { id: 1, title: "Aplicativos", description: "Desenvolvemos aplicativos personalizados que atendem às suas necessidades específicas.", icon: <FaMobileAlt /> },

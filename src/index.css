@@ -1,4 +1,19 @@
-body{
-    margin: 0;
-    padding: 0;
+/* Definindo as fontes */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
 }
+
+/* Caso queira usar uma fonte específica em determinados elementos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Fonte para os títulos */
+}
+
+p, span, div {
+    font-family: 'Jost', sans-serif; /* Fonte para parágrafos e outros elementos */
+}
+
+button{
+    font-family: 'Jost', sans-serif;
+}
+
+/* Para fontes específicas, você pode adicionar mais classes conforme necessário */

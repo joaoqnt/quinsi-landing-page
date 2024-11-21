@@ -1,0 +1,64 @@
+/* Contêiner para o botão e a seta */
+.interest-container {
+    display: flex; /* Coloca o botão e a seta em linha */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 15px; /* Maior espaçamento entre o botão e a seta */
+    margin-top: 30px;
+    transition: opacity 0.6s ease; /* Para a visibilidade do contêiner ao carregar */
+}
+
+/* Estilo do botão */
+.interest-button-transparent {
+    font-size: 40px;
+    font-weight: 600;
+    padding-right: 50px;
+    padding-top: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.interest-button-transparent:hover {
+    font-weight: 800;
+    transform: scale(1.05);
+}
+
+/* Contêiner da seta */
+.arrow-container {
+    position: relative;
+    display: inline-block;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 1s ease-in-out, transform 0.6s ease; /* Transições suaves */
+}
+
+/* Estilo da seta */
+.arrow-image {
+    width: 100px; /* Ajuste o tamanho da seta */
+    height: auto;
+    margin-top: -25px;
+    margin-left: -50px;
+    position: relative;
+    z-index: 1; /* A seta fica acima */
+    transition: transform 0.6s ease, filter 0.6s ease, opacity 0.3s ease;
+}
+
+.arrow-container.loaded {
+    opacity: 1; /* Torna a seta visível com transição suave */
+    transform: translateY(0); /* Move a seta suavemente para a posição original */
+}
+
+@media (max-width: 768px) {
+    .arrow-image{
+        width: 50px;
+        margin-top: -30px;
+    }
+
+    .interest-button-transparent {
+        font-size: 20px;
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
+}

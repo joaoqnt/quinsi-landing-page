@@ -1,0 +1,17 @@
+.interest-button {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #7A77FC, #6650FA);
+    border: 2px solid #5D31FF;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.interest-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #6650FA, #5D31FF);
+}

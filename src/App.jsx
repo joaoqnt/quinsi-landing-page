@@ -1,11 +1,11 @@
 import './App.css'
-import FeatureSection from './components/FeatureSection'
 import Navbar from './components/Navbar'
-import FirstSection from './components/FirstSection'
-import SecondSection from './components/SecondSection'
-import WhatsAppButton from './components/WhatsappButton'
-import TechSection from './components/TechSection'
+import FirstSection from './components/sections/FirstSection'
+import PrioritySection from './components/sections/PrioritySection'
+import AboutUsSection from './components/sections/AboutUsSection'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/buttons/WhatsAppButton'
+
 
 function App() {
 
@@ -13,10 +13,13 @@ function App() {
     <>
       <Navbar></Navbar>
       <FirstSection></FirstSection>
-      <FeatureSection></FeatureSection>
-      <SecondSection></SecondSection>
+      <PrioritySection></PrioritySection>
+      <AboutUsSection></AboutUsSection>
       <Footer></Footer>
       <WhatsAppButton />
+      {/* <PrioritySection></PrioritySection>
+      <Footer></Footer>
+      <WhatsAppButton /> */}
     </>
   )
 }

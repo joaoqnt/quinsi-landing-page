@@ -1,0 +1,59 @@
+/* Estilo do card de prioridade */
+.priority-card {
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #e8e8e8;
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform 0.3s ease; /* Animação suave de transformação */
+  }
+  
+  .priority-card h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+  }
+  
+  .priority-info {
+    display: flex; /* Coloca o texto e a seta na mesma linha */
+    align-items: center; /* Alinha verticalmente o texto e a seta */
+    gap: 10px; /* Espaço entre o texto e a seta */
+    font-size: 18px;
+    margin-top: 10px;
+    color: #757575;
+  }
+  
+  .arrow {
+    font-size: 24px; /* Tamanho da seta */
+    color: #5D31FF; /* Cor da seta */
+    transition: transform 0.3s ease; /* Transição suave para o hover */
+  }
+  
+  .arrow:hover {
+    transform: translateX(5px); /* Move a seta para a direita ao passar o mouse */
+  }
+  
+  .priority-card:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card ao passar o mouse */
+  }
+  
+  .card-priority p {
+    margin: 0;
+    font-size: 18px;
+    color: #424242;
+  }
+
+  @media (max-width: 768px) {
+    .priority-card {
+      width: 75%;
+      height: 150px;
+    }
+  }
+  
