@@ -4,16 +4,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 40px;
-    background-color: #424242; /* Fundo branco */
+    background-color: #424242; /* Fundo cinza */
     position: fixed;
     top: 0; /* Alinha ao topo */
     width: 100%; /* Faz com que ocupe a largura total da página */
     z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
-}
-
-/* Espaçamento para o conteúdo não ficar escondido atrás da navbar */
-.body-content {
-    padding-top: 70px; /* Ajuste conforme a altura da navbar */
 }
 
 /* Logo da Navbar */
@@ -21,34 +16,19 @@
     width: 200px; /* Ajuste conforme necessário */
 }
 
-/* Estilo do Menu */
-.navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Espaço entre os itens */
-    margin: 0;
-    padding: 0;
+/* Ajuste do botão */
+.navbar-button {
+    padding: 0 20px; /* Adiciona 20px de espaçamento à direita e à esquerda do botão */
 }
 
-/* Links do Menu */
-.navbar-menu li a {
-    text-decoration: none;
-    color: #333; /* Cor do texto */
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-/* Efeito hover nos links */
-.navbar-menu li a:hover {
-    color: #000; /* Muda a cor ao passar o mouse */
-}
-
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .navbar {
-        padding: 0px 15px;
+        padding: 0px;
     }
 
-    .navbar-logo {
-        width: 150px; /* Ajuste conforme necessário */
+    .navbar-button {
+        padding: 0 15px;
+        margin: 0px;
     }
 }

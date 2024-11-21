@@ -1,0 +1,61 @@
+.card {
+  position: relative;
+  border: 1px solid #e0e0e0; /* Borda cinza bem claro */
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; /* Deixa espaço para o ícone */
+  display: flex; /* Alinha os itens no eixo vertical */
+  flex-direction: column; /* Ordena verticalmente os itens */
+  justify-content: space-between; /* Espaço entre o conteúdo e o botão */
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -25px; /* Metade para fora */
+  left: 16px;
+  z-index: 1;
+}
+
+.icon {
+  background-color: #efeffd; /* Fundo roxo claro */
+  color: #5d31ff; /* Cor do ícone */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  margin-top: 20px; /* Ajusta para alinhar corretamente o conteúdo */
+  text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  color: #333;
+  text-align: left; /* Garante o alinhamento à esquerda */
+}
+
+.text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left; /* Garante o alinhamento à esquerda */
+}
+
+.card-button-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+  align-items: center; /* Garante alinhamento no centro vertical */
+}

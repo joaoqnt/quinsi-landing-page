@@ -1,6 +1,6 @@
 .about-us-section {
     padding: 60px;
-    margin-top: 20px;
+    background: linear-gradient(90deg, #f1f1fa,#ffffff)
 }
 
 h1{
@@ -9,16 +9,19 @@ h1{
     padding: 0px;
 }
 
+p{
+    color: #424242; /* Cor do texto */
+}
+
 .divider{
     height: 4px;
     width: 120px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, #7A77FC, #5D31FF);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #9f9dff, #5D31FF);
 }
 
 .section{
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +30,6 @@ h1{
 .our-mission{
     background-color: white;
     padding: 60px;
-    margin-top: 40px;
 }
 
 .div-wrapper {
@@ -85,7 +87,6 @@ h1{
 
 .value-item p {
     margin: 0; /* Remove a margem padrão do parágrafo */
-    color: #424242; /* Cor do texto */
 }
 
 .value-item strong {
@@ -98,6 +99,31 @@ h1{
 }
 
 @media (max-width: 768px) {
+    .our-mission,.about-us-section{
+        padding: 20px;
+    }
+    .values-section {
+        align-items: center; /* Centraliza os itens na tela */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 15px;
+    }
+
+    .value-item {
+        flex-direction: column; /* Ícone acima do texto */
+        align-items: center; /* Centraliza cada item */
+        margin-bottom: 20px;
+    }
+
+    .value-item i.icon {
+        margin-right: 0; /* Remove espaço lateral */
+        margin-bottom: 10px; /* Adiciona espaço entre ícone e texto */
+        font-size: 28px; /* Aumenta o ícone para melhor visualização */
+    }
+
+    .value-item p {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
     .div-wrapper {
         flex-direction: column; /* Empilha em telas pequenas */
         align-items: center; /* Centraliza o conteúdo */
@@ -110,6 +136,7 @@ h1{
 
     .image-section img {
         width: 400px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
+
 }

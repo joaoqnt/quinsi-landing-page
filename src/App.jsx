@@ -5,6 +5,7 @@ import PrioritySection from './components/sections/PrioritySection'
 import AboutUsSection from './components/sections/AboutUsSection'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/buttons/WhatsAppButton'
+import CaseSection from './components/sections/CaseSection'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <FirstSection></FirstSection>
       <PrioritySection></PrioritySection>
       <AboutUsSection></AboutUsSection>
+      <CaseSection></CaseSection>
       <Footer></Footer>
       <WhatsAppButton />
       {/* <PrioritySection></PrioritySection>

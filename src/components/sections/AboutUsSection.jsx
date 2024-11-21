@@ -30,7 +30,7 @@ const AboutUsSection = () => {
                     <h1>Nossa missão</h1>
                     <div className='divider'></div>
                     <p>
-                        Capacitar empresas e empreendedores a <b>inovarem de forma simples, descomplicada e eficiente</b>. Desenvolvemos soluções tecnológicas personalizadas que não apenas resolvem problemas, mas criam novas oportunidades de crescimento e excelência. Queremos fazer da tecnologia uma aliada acessível e transformadora, ajudando negócios a se destacarem no mercado por meio de ferramentas inteligentes, intuitivas e focadas no que realmente importa: <strong>RESULTADOS.</strong>
+                        Capacitar empresas e empreendedores a inovarem de forma simples, descomplicada e eficiente. Desenvolvemos soluções tecnológicas personalizadas que não apenas resolvem problemas, mas criam novas oportunidades de crescimento e excelência. Queremos fazer da tecnologia uma aliada acessível e transformadora, ajudando negócios a se destacarem no mercado por meio de ferramentas inteligentes, intuitivas e focadas no que realmente importa: <strong>RESULTADOS.</strong>
                     </p>
                     <div className='values-section'>
                         <div className='value-item'>

@@ -1,0 +1,70 @@
+.case-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(90deg, #ffffff,#ededfd)
+}
+
+.title-text,
+.title-text-lower {
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+    color: transparent; /* O texto precisa ser transparente para exibir o degradê */
+    background: linear-gradient(90deg, #5D31FF,#7A77FC); /* Degradê aplicado ao fundo */
+    -webkit-background-clip: text; /* Clipa o fundo ao texto no WebKit */
+    background-clip: text; /* Clipa o fundo ao texto */
+    opacity: 1; /* Estado inicial neutro */
+    transform: translateX(0); /* Estado inicial neutro */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para hover */
+}
+
+.title-text {
+    align-self: flex-end;
+    margin-top: 20px; /* Margem superior apenas para o texto de cima */
+    animation-delay: 0.2s; /* Delay para o texto superior */
+}
+
+.title-text-lower {
+    align-self: flex-start; /* Move o texto inferior para o canto direito */
+    text-align: left;
+    margin-bottom: 20px;
+    animation-delay: 0.4s; /* Delay para o texto inferior */
+}
+
+/* Hover */
+.title-text:hover,
+.title-text-lower:hover {
+    transform: translateX(10px); /* Efeito de movimento lateral para ambos no hover */
+    opacity: 1; /* Garante que a opacidade não seja afetada pelo hover */
+}
+
+.case-section h2{
+    color: #757575;
+}
+
+.case-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+@media (max-width: 768px) {
+    .case-section {
+        padding: 20px;
+    }
+
+    .title-text,
+    .title-text-lower {
+        font-size: 35px;
+    }
+
+    .case-section h2 {
+        font-size: 14px;
+      }
+
+      .case-cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
