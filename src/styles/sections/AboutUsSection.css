@@ -1,16 +1,19 @@
 .about-us-section {
     padding: 60px;
-    background: linear-gradient(90deg, #f1f1fa,#ffffff)
+    background-image: url('../../assets/background-quinsi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-h1{
-    color: rgb(66, 66, 66);
+.about-us-section h1{
+    color: white;
     margin: 0px;
     padding: 0px;
 }
 
-p{
-    color: #424242; /* Cor do texto */
+.about-us-section p{
+    color: white; /* Cor do texto */
 }
 
 .divider{

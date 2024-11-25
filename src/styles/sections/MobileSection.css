@@ -1,0 +1,68 @@
+.mobile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 60px;  /* Diminuímos o padding */
+    background-color: white;
+    justify-content: space-between;
+  }
+
+  .box-mobile{
+    width: 50%; /* O texto ocupa metade do espaço */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-image {
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .box-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Animação contínua */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+      transform: translateY(-10px); /* Sobe 10px */
+    }
+    100% {
+      transform: translateY(0); /* Volta à posição inicial */
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .mobile-section {
+      flex-direction: column; /* Empilha imagem e texto no mobile */
+      padding: 20px;
+      justify-content: flex-start; /* Garante que os elementos fiquem no início */
+    }
+  
+    .box-mobile {
+      width: 100%; /* O texto ocupa todo o espaço */
+      text-align: start; 
+      margin-bottom: 30px;
+    }
+  
+    .box-image {
+      width: 100%; /* A imagem ocupa todo o espaço */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    img {
+      max-width: 80%; /* Garante que a imagem seja responsiva */
+      margin-bottom: 20px;
+    }
+
+  }
+  

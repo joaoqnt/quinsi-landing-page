@@ -5,35 +5,98 @@
     padding: 60px;  /* Diminuímos o padding */
     background-color: white;
   }
-  
-  .priority-section h1 {
-    color: rgb(66, 66, 66);
+
+  .priority-box-app, .priority-box-auto, .priority-box-sistema {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease, padding-bottom 0.3s ease; /* Transição suave */
+}
+
+.priority-box-app:hover, .priority-box-auto:hover, .priority-box-sistema:hover {
+    transform: translateY(-10px); /* Move todo o elemento para cima */
+    padding-bottom: 30px; /* Aumenta o espaçamento inferior para que o conteúdo "suba" visualmente */
+}
+
+
+  .priority-box-app{
+    background-image: url('../../assets/automacao_picture.png');
   }
-  
-  .priority-section h2 {
-    color: #757575;
+
+  .priority-box-sistema{
+    background-image: url('../../assets/sistema_picture.png');
   }
-  
+
+  .priority-box-auto{
+    background-image: url('../../assets/chatbot_image.png');
+  }
+
   .priority-cards-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
   }
-  
-  /* Responsividade */
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .priority-cards-grid {
-      grid-template-columns: 1fr; /* Uma coluna */
-      justify-content: center; /* Centraliza os itens horizontalmente */
-      align-items: center; /* Centraliza os itens verticalmente */
-    }
 
-    .priority-section {
-      padding: 20px;
-    }
+  .button-more {
+    display: inline-flex; /* Usamos flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    background-color: transparent;
+    padding: 10px 20px; /* Tamanho do botão */
+    border: 1px solid white;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 200px; /* Largura fixa */
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none; /* Remove sublinhado do <a> */
+    text-align: center; /* Garante centralização no texto */
+    transition: all 0.3s ease; /* Adiciona animação de transição */
+}
 
-    .priority-section h2 {
-      font-size: 14px;
-    }
+.button-more:hover {
+    background-color: white; /* Efeito ao passar o mouse */
+    color: #5D31FF; /* Muda a cor do texto */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+
+.priority-box-app h1, .priority-box-app p , .priority-box-sistema h1, .priority-box-sistema p, .priority-box-auto h1, .priority-box-auto p{
+    color: white;
+}
+
+@media (max-width: 768px) {
+.priority-section{
+  padding: 20px;
+}
+
+  .priority-cards-grid {
+    grid-template-columns: 1fr; /* Os cards ocuparão uma única coluna */
+    width: 100%;
   }
+
+  .priority-box-app, .priority-box-auto, .priority-box-sistema {
+    height: 400px; /* Ajuste a altura para mobile */
+    width: 95%;
+    padding: 10px;
+    border-radius: 0; /* Remove bordas arredondadas para ocupar toda a tela */
+  }
+
+  .button-more {
+    width: 100%; /* O botão ocupa toda a largura */
+    max-width: 300px; /* Define um limite para largura */
+    margin: 10px auto; /* Centraliza o botão */
+  }
+}
+
+
   

@@ -1,0 +1,97 @@
+.evolution-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background-color: white;
+}
+
+.evolution-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.evolution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Opcional: fundo leve para os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.evolution-cards-grid h1 {
+    font-size: 80px;
+    color: #5D31FF;
+    margin: 0; /* Remove margem superior e inferior */
+}
+
+.evolution-cards-grid p {
+    font-size: 18px;
+    color: #424242;;
+    margin: 0; /* Remove margem */
+    padding: 0;
+}
+
+.evolution-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background-color: white;
+}
+
+.evolution-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas para telas grandes */
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.evolution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+}
+
+.evolution-cards-grid h1 {
+    font-size: 80px;
+    color: #5D31FF;
+    margin: 0; /* Remove margens */
+}
+
+.evolution-cards-grid p {
+    font-size: 18px;
+    margin: 0; /* Remove margens */
+    padding: 0;
+}
+
+
+/* Ajuste para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .evolution-section {
+        padding: 20px;
+    }
+
+    .evolution-cards-grid {
+        grid-template-columns: 1fr; /* Uma coluna */
+        gap: 15px;
+    }
+
+    .evolution-card {
+        padding: 15px;
+    }
+}
+

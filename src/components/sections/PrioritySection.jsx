@@ -1,13 +1,28 @@
 import React from 'react';
 import '../../styles/sections/PrioritySection.css'
-import PriorityCard from '../cards/PriorityCard'
-import InterestButton from '../buttons/InterestButton';
 
 const PrioritySection = () => {
     return (
         <div className='priority-section'>
-            <h1>O que priorizamos em cada Projeto?</h1>
-            <h2>Desenvolvimento pensado em aperfeiçoar, automatizar e digitalizar operações e serviços.</h2>
+            <h1>O que oferecemos?</h1>
+            <div className='priority-cards-grid'>
+                <div className='priority-box-app'>
+                    <h1>Aplicativo</h1>
+                    <p>Entrega do MVP em até 3 meses</p>
+                    <a href="#mobile" class="button-more">Saiba mais</a>
+                </div>
+                <div className='priority-box-auto'>
+                    <h1>Automação</h1>
+                    <p>Otimização dos seus processos</p>
+                    <a href="#desktop" class="button-more">Saiba mais</a>
+                </div>
+                <div className='priority-box-sistema'>
+                    <h1>Sistema</h1>
+                    <p>Entrega do MVP em até 3 meses</p>
+                    <a href="#desktop" class="button-more">Saiba mais</a>
+                </div>
+            </div>
+            {/* <h2>Desenvolvimento pensado em aperfeiçoar, automatizar e digitalizar operações e serviços.</h2>
             <div className="priority-cards-grid">
                 <PriorityCard
                     title="Eficiência"
@@ -26,7 +41,7 @@ const PrioritySection = () => {
                     content="Cresça sem limites com soluções flexíveis e prontas para se adaptar às suas necessidades futuras."
                 />
             </div>
-            <InterestButton content='Tenho interesse'></InterestButton>
+            <InterestButton content='Tenho interesse'></InterestButton> */}
         </div>
     );
 };

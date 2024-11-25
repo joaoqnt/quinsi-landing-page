@@ -4,6 +4,7 @@
     margin-top: 30px;
     font-weight: 600;
     background: linear-gradient(90deg, #7A77FC, #6650FA);
+    border-radius: 5px;
     border: 2px solid #010007;
     cursor: pointer;
     color: #ffffff;

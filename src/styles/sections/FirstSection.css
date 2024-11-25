@@ -1,94 +1,91 @@
 .first-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Alinha imagem e texto lado a lado */
     align-items: center;
+    justify-content: space-between;
     padding: 60px;
     margin-top: 80px;
-    background: linear-gradient(90deg, #424242, #353535);
-}
-
-.main-text,
-.main-text-lower {
-    font-size: 75px;
-    padding: 0;
-    margin: 0;
-    color: transparent; /* O texto precisa ser transparente para exibir o degradê */
-    background: linear-gradient(90deg, #7A77FC, #5D31FF); /* Degradê aplicado ao fundo */
-    -webkit-background-clip: text; /* Clipa o fundo ao texto no WebKit */
-    background-clip: text; /* Clipa o fundo ao texto */
-    opacity: 1; /* Estado inicial neutro */
-    transform: translateX(0); /* Estado inicial neutro */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para hover */
-}
-
-/* Animação ao carregar */
-.animate-on-load {
-    opacity: 0; /* Começa invisível */
-    transform: translateX(-50px); /* Deslocamento inicial para a esquerda */
-    animation: fadeInFromLeft 1s ease-out forwards; /* Aparece ao carregar */
-}
-
-@keyframes fadeInFromLeft {
+  }
+  
+  .div-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .box-main-text {
+    width: 50%; /* O texto ocupa metade do espaço */
+    display: flex;
+    flex-direction: column; /* Garante que o texto fique em coluna */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    padding: 20px;
+  }
+  
+  .main-text {
+    font-size: 45px;
+    color: #424242; /* Cor do título principal */
+    margin: 0 0 20px 0; /* Espaçamento inferior */
+  }
+  
+  .quinsi-text {
+    font-size: 50px;
+    color: #5D31FF; /* Cor personalizada */
+    margin: 0px; /* Espaçamento inferior */
+  }
+  
+  .box-main-text p {
+    font-size: 18px;
+    color: #555; /* Cor do texto */
+    line-height: 1.5; /* Melhora a legibilidade */
+    margin-top: 10px;
+  }
+  
+  .bouncing {
+    animation: bounce 1.5s cubic-bezier(0.25, 1, 0.5, 1) 1; /* A animação executa uma vez */
+  }
+  
+  @keyframes bounce {
     0% {
-        opacity: 0;
-        transform: translateX(-50px);
+      transform: translateY(0); /* Posição inicial */
+    }
+    30% {
+      transform: translateY(-20px); /* Sobe um pouco */
+    }
+    50% {
+      transform: translateY(10px); /* Desce um pouco */
+    }
+    70% {
+      transform: translateY(-10px); /* Sobe novamente */
     }
     100% {
-        opacity: 1;
-        transform: translateX(0);
+      transform: translateY(0); /* Estabiliza */
     }
-}
+  }
+  
 
-/* Texto principal */
-.main-text {
-    align-self: flex-start;
-    margin-top: 20px; /* Margem superior apenas para o texto de cima */
-    animation-delay: 0.2s; /* Delay para o texto superior */
-}
-
-.main-text-lower {
-    align-self: flex-end; /* Move o texto inferior para o canto direito */
-    text-align: left;
-    margin-bottom: 20px;
-    animation-delay: 0.4s; /* Delay para o texto inferior */
-}
-
-/* Hover */
-.main-text:hover,
-.main-text-lower:hover {
-    transform: translateX(10px); /* Efeito de movimento lateral para ambos no hover */
-    opacity: 1; /* Garante que a opacidade não seja afetada pelo hover */
-}
-
-/* Botão de otimização */
-.button-optimize {
-    margin-top: 30px;
-    background-color: #5D31FF;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    text-align: center;
-    border-radius: 20px; /* Opcional: para bordas arredondadas */
-}
-
-.button-optimize p {
-    color: #ffffff;
-    font-weight: 600;
-    margin: 10px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .first-section {
-        padding: 20px;
+      flex-direction: column; /* Empilha imagem e texto no mobile */
+      padding: 20px;
     }
-
-    .main-text {
-        margin-top: 100px;
+  
+    .div-image, .box-main-text {
+      width: 100%; /* Ambos ocupam largura total */
+      text-align: start;
     }
-
-    .main-text,
-    .main-text-lower {
-        font-size: 35px;
+    .main-text, .quinsi-text {
+        font-size: 30px;
+      }
+  
+    img {
+      max-width: 80%; /* Ajusta o tamanho da imagem no mobile */
+      margin-bottom: 20px;
     }
-}
+  }
+  
