@@ -21,6 +21,8 @@ function App() {
       <PrioritySection></PrioritySection>
       <MobileSection></MobileSection>
       <DesktopSection></DesktopSection>
+      <Footer></Footer>
+      <WhatsAppButton />
       {/* <PrioritySection></PrioritySection>
       <AboutUsSection></AboutUsSection>
       <CaseSection></CaseSection>

@@ -9,77 +9,66 @@
 .evolution-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin-top: 20px;
     width: 100%;
-    gap: 20px;
 }
 
 .evolution-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9; /* Opcional: fundo leve para os cards */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-
-.evolution-cards-grid h1 {
-    font-size: 80px;
-    color: #5D31FF;
-    margin: 0; /* Remove margem superior e inferior */
-}
-
-.evolution-cards-grid p {
-    font-size: 18px;
-    color: #424242;;
-    margin: 0; /* Remove margem */
-    padding: 0;
-}
-
-.evolution-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
-    background-color: white;
-}
-
-.evolution-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas para telas grandes */
-    margin-top: 20px;
-    width: 100%;
-    gap: 20px;
-}
-
-.evolution-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
     text-align: center;
     padding: 20px;
     background-color: white;
-    /* background-color: #f9f9f9; */
     border-radius: 10px;
 }
 
-.evolution-cards-grid h1 {
+.evolution-text {
     font-size: 80px;
     color: #5D31FF;
-    margin: 0; /* Remove margens */
+    margin: 0;
 }
 
-.evolution-cards-grid p {
+.evolution-card p {
     font-size: 18px;
-    margin: 0; /* Remove margens */
+    color: #424242;
+    margin: 0;
     padding: 0;
 }
 
+.list-evolution-topic{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
 
-/* Ajuste para telas pequenas (celulares) */
+.evolution-topic {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    width: 30%;
+    border-bottom:1px solid #c5c5c5;
+}
+
+.evolution-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #FFD700; /* Cor padrão do ícone */
+}
+
+.evolution-topic h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .evolution-section {
         padding: 20px;
@@ -93,5 +82,8 @@
     .evolution-card {
         padding: 15px;
     }
-}
 
+    .evolution-text {
+        font-size: 60px;
+    }
+}

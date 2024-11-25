@@ -5,7 +5,7 @@ import EspecialistaButton from '../buttons/EspecialistaButton';
 
 const DesktopSection = () => {
     return (
-        <div className='mobile-section' id='desktop'>
+        <div className='desktop-section' id='desktop'>
             <div className='box-image'>
                 <img src={image} alt='Desenvolvimento mobile' />
             </div>

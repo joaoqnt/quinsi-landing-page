@@ -1,17 +1,24 @@
 /* Estilo do card de prioridade */
 .priority-card {
-    padding: 20px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 2px solid #e8e8e8;
-    margin: 20px;
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    transition: transform 0.3s ease; /* Animação suave de transformação */
-  }
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Efeito de hover para destaque */
+.priority-card:hover {
+  transform: translateY(-5px); /* Eleva levemente o card */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta a intensidade da sombra */
+}
+
   
   .priority-card h1 {
     font-size: 24px;

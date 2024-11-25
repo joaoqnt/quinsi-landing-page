@@ -7,6 +7,15 @@
     justify-content: space-between;
   }
 
+  .desktop-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 60px;  /* Diminuímos o padding */
+    background-color: white;
+    justify-content: space-between;
+  }
+
   .box-mobile{
     width: 50%; /* O texto ocupa metade do espaço */
     display: flex;
@@ -42,6 +51,12 @@
   @media (max-width: 768px) {
     .mobile-section {
       flex-direction: column; /* Empilha imagem e texto no mobile */
+      padding: 20px;
+      justify-content: flex-start; /* Garante que os elementos fiquem no início */
+    }
+
+    .desktop-section {
+      flex-direction: column-reverse; /* Empilha imagem e texto no mobile */
       padding: 20px;
       justify-content: flex-start; /* Garante que os elementos fiquem no início */
     }
